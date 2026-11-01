@@ -42,16 +42,18 @@ section h2 { font-size: 2rem; margin-bottom: 12px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
 
 /* Hero */
-.hero { background: var(--cor-branca); padding: 64px 0; margin-bottom: 15px; }
+.hero { background: #0f4c4f; color: #fff; padding: 72px 0; margin-bottom: 15px; }
 .hero .wrap { display: grid; grid-template-columns: 1.25fr .75fr; gap: 48px; align-items: center; }
-.hero .sub { color: var(--cor-destaque); font-weight: 700; margin-bottom: 8px; }
-.hero h1 { font-size: 2.6rem; margin-bottom: 16px; }
-.hero .desc { max-width: 52ch; margin-bottom: 30px; font-size: 1.1rem; }
-.hero-card { background: var(--cor-fundo); border: 1px solid var(--cor-borda); border-top: 4px solid var(--cor-destaque); border-radius: var(--raio); padding: 26px; }
-.hero-card h2 { font-size: 1.15rem; margin-bottom: 14px; }
-.hero-card ol { padding-left: 20px; display: grid; gap: 10px; }
-.hero-card small { display: block; margin-top: 14px; color: #475569; }
-@media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } .cta-row .btn { width: 100%; } }
+.hero .sub { color: #bfe3df; font-weight: 600; font-size: 1.15rem; margin-bottom: 10px; }
+.hero h1 { color: #fff; font-size: 2.8rem; margin-bottom: 16px; }
+.hero .desc { max-width: 52ch; margin-bottom: 30px; font-size: 1.1rem; color: #e3f2f0; }
+.hero .btn-line { border-color: rgba(255,255,255,.55); color: #fff; }
+.hero .btn-line:hover { background: rgba(255,255,255,.14); color: #fff; }
+.hero-card { background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.25); border-top: 4px solid var(--cor-destaque); border-radius: var(--raio); padding: 26px; }
+.hero-card h2 { color: #fff; font-size: 1.15rem; margin-bottom: 14px; }
+.hero-card ol { padding-left: 20px; display: grid; gap: 10px; color: #e3f2f0; }
+.hero-card small { display: block; margin-top: 14px; color: #bfe3df; }
+@media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .hero { padding: 52px 0; } .hero h1 { font-size: 2.1rem; } .cta-row .btn { width: 100%; } }
 
 /* Convênios */
 .planos { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin-bottom: 22px; }
