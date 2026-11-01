@@ -80,15 +80,16 @@ section h2 { font-size: 2rem; margin-bottom: 12px; }
 @media (max-width: 760px) { .equipe { grid-template-columns: 1fr; } }
 
 /* Unidades */
-.unidades { display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; }
+.unidades { display: grid; grid-template-columns: 1fr; max-width: 920px; margin: 0 auto; }
 .card { background: var(--cor-branca); border: 1px solid var(--cor-borda); border-top: 4px solid var(--cor-destaque); border-radius: var(--raio); overflow: hidden; }
 .card .body { padding: 24px; }
 .card h3 { font-size: 1.25rem; margin-bottom: 6px; }
 .card iframe { width: 100%; height: 260px; border: 0; display: block; }
 .card .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-.card.soon { background: var(--cor-fundo); border-style: dashed; border-top-style: dashed; border-top-color: var(--cor-borda); }
-.badge { background: #F59E0B; color: #fff; font-size: .75rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 12px; margin-left: 8px; vertical-align: middle; }
-@media (max-width: 860px) { .unidades { grid-template-columns: 1fr; } }
+.card.unica { display: grid; grid-template-columns: 1.15fr 1fr; align-items: stretch; }
+.card.unica iframe { height: 100%; min-height: 300px; }
+.card.unica .body { display: flex; flex-direction: column; justify-content: center; }
+@media (max-width: 760px) { .card.unica { grid-template-columns: 1fr; } .card.unica iframe { height: 260px; min-height: 0; } .card .actions .btn { width: 100%; } }
 
 /* FAQ */
 .faq { max-width: 800px; }
